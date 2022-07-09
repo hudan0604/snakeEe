@@ -1,0 +1,36 @@
+:host {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .velocity-increases {
+    opacity: 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 400ms;
+
+    &--visible {
+      opacity: 1;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 15%;
+    background: #100f0ff7;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

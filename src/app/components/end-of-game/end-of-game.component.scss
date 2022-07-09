@@ -1,0 +1,23 @@
+.error {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  background: #f37474;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  color: whitesmoke;
+  font-weight: 700;
+  opacity: 0;
+  transition: 300ms ease-in;
+  padding: 26px;
+
+  &--visible {
+    opacity: 1;
+  }
+}

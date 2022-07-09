@@ -1,0 +1,9 @@
+<div [ngClass]="{ error: true, 'error--visible': endOfGame.open }">
+  👹 Ouch mate...
+  {{
+    endOfGame.reasonOfEnd === "hasCollided"
+      ? "The snake has eaten himself"
+      : "You touched a border !"
+  }}
+  ... 👹
+</div>
