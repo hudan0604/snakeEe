@@ -229,7 +229,7 @@ export class GameComponent implements OnInit {
   }
 
   gen_food() {
-    if (this.score % 30 === 0) {
+    if (this.score > 0 && this.score % 30 === 0) {
       this.informPlayerThatGameVelocityIncreases = true;
       setTimeout(() => {
         this.informPlayerThatGameVelocityIncreases = false;
